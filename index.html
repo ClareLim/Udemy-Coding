@@ -4,10 +4,7 @@
 <head>
     <!-- all the information for that meta information is contained within the element as an attribute -->
     <meta charset="utf-8">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <title>My Page</title>
 </head>
 
@@ -25,64 +22,66 @@
 </head>
 
 <body>
+    <main class="container">
+        <div>
+            <a href="#bottom">Go to bottom</a>
+            <!-- img src is where you can state relative path of img; alt is the name/description of image -->
+            <!-- you can also list the full path to an image online -->
+            <!-- img supports png, jpeg, GIFs, SVG, webp, you can also state attributes i.e. sizing -->
 
-    <div>
-        <a href="#bottom">Go to bottom</a>
-        <!-- img src is where you can state relative path of img; alt is the name/description of image -->
-        <!-- you can also list the full path to an image online -->
-        <!-- img supports png, jpeg, GIFs, SVG, webp, you can also state attributes i.e. sizing -->
+            <img width="200px" src="download.png" alt="HTML5 Icon" width="100" height="100">
+        </div>
+        <img
+            src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax/grumpy-cat-small.png">
 
-        <img width="200px" src="download.png" alt="HTML5 Icon" width="100" height="100">
-    </div>
-    <img src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax/grumpy-cat-small.png">
-
-    <!-- id field is CASE/CAPS SENSITIVE -->
-    <p id="myID">
-        Hello <br> World
-    </p>
-
-
-
-    <div>
-        <!-- <br> gives separation between words -->
-        <!-- <div style> is only applied to that element and structure is same as we can get with CSS -->
-        <!-- href is to provide full path/destination of link. It can be a URL or a image or html element. -->
-        <!-- note href is applied to the NEXT text e.g. "World" in this case. -->
-        <!-- target is how it is going to be displayed in browser window/taken away to another page. -->
-        <!-- self takes you to new page & eliminates the current page; blank takes you to new page & keeps the current page; parent opens doc up to paren; top opens up document in full body of window-->
-        <!-- blank and self are popularly used. -->
-        <!-- absolute path is the path from the root of the website or full website e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="/home/clarelim/Desktop/Udemy Coding/index.html" or href="index.html". -->
-        <!-- relative file is relate to where the file is located. e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="index.html". -->
-        <h1>Hello <a href="https://www.google.com" target="_blank">World</a></h1>
-        <div style="color:blue;">Welcome to my site.</div>
-        <div style="color:red;">Welcome to my site.</div>
-        <hr>
-        <p title="My Name">My name is <span>Clare</span> <span>Lim</span></p>
-
-    </div>
-
-    <!-- <hr> gives horizontal line -->
-    <hr>
-
-    <h2 class="blue">Heading 2</h2>
-    <h4 class="red">Heading 4</h4>
-    <h6 class="green">Heading 6</h6>
-    <!-- example of relative file/path -->
-    <p>Go to <a href="new.html">New Page</a></p>
-
-    <p>Send Email <a href="mailto:studyadm2024@gmail.com">studyadm2024@gmail.com</a></p>
-
-    <div id ="bottom">
         <!-- id field is CASE/CAPS SENSITIVE -->
-        Hi there,<a href="#myID">Go to top element with my ID</a>
-    </div>
+        <p id="myID">
+            Hello <br> World
+        </p>
 
-    <!-- Add another div here-->
-    <!-- 
+
+
+        <div>
+            <!-- <br> gives separation between words -->
+            <!-- <div style> is only applied to that element and structure is same as we can get with CSS -->
+            <!-- href is to provide full path/destination of link. It can be a URL or a image or html element. -->
+            <!-- note href is applied to the NEXT text e.g. "World" in this case. -->
+            <!-- target is how it is going to be displayed in browser window/taken away to another page. -->
+            <!-- self takes you to new page & eliminates the current page; blank takes you to new page & keeps the current page; parent opens doc up to paren; top opens up document in full body of window-->
+            <!-- blank and self are popularly used. -->
+            <!-- absolute path is the path from the root of the website or full website e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="/home/clarelim/Desktop/Udemy Coding/index.html" or href="index.html". -->
+            <!-- relative file is relate to where the file is located. e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="index.html". -->
+            <h1>Hello <a href="https://www.google.com" target="_blank">World</a></h1>
+            <div style="color:blue;">Welcome to my site.</div>
+            <div style="color:red;">Welcome to my site.</div>
+            <hr>
+            <p title="My Name">My name is <span>Clare</span> <span>Lim</span></p>
+
+        </div>
+
+        <!-- <hr> gives horizontal line -->
+        <hr>
+
+        <h2 class="blue">Heading 2</h2>
+        <h4 class="red">Heading 4</h4>
+        <h6 class="green">Heading 6</h6>
+        <!-- example of relative file/path -->
+        <p>Go to <a href="new.html">New Page</a></p>
+
+        <p>Send Email <a href="mailto:studyadm2024@gmail.com">studyadm2024@gmail.com</a></p>
+
+        <div id="bottom">
+            <!-- id field is CASE/CAPS SENSITIVE -->
+            Hi there,<a href="#myID">Go to top element with my ID</a>
+        </div>
+
+        <!-- Add another div here-->
+        <!-- 
             <div>
                 Content
             </div>
           -->
+    </main>
 </body>
 
 </html>
