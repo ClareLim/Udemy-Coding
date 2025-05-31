@@ -4,14 +4,13 @@
 <head>
     <!-- all the information for that meta information is contained within the element as an attribute -->
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
     <title>My Page</title>
 </head>
 
 <!-- This section provides styling for those classes and illustrate class attributes -->
 <style>
     .blue {
-
         color: blue;
     }
 
@@ -22,6 +21,47 @@
 </head>
 
 <body>
+<table>
+    <!-- tr are rows; td are table cells -->
+    <!-- this row serves as the header for the various columns of data -->
+     <colgroup>
+        <col span="1" style="background-color:purple">
+    </colgroup>
+    <tr>
+        <th>Name</th>
+        <td>Chapter 1</td>
+        <td>Chapter 2</td>
+        <td>Chapter 3</td>
+        <td>Chapter 4</td>
+    </tr>
+
+    <tr>
+        <td>Laurence</td>
+        <td>x</td>
+        <td> </td>
+        <td>x</td>
+        <td> </td>
+    </tr>
+
+    <tr>
+        <td>John</td>
+        <td>x</td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+
+    <tr>
+        <td>Anne</td>
+        <td> </td>
+        <td>x</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+
+</table>
+
+
     <main class="container">
         <div>
             <a href="#bottom">Go to bottom</a>
