@@ -6,6 +6,12 @@
     <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
     <title>My Page</title>
+    <style> table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:5px;
+    }
+    </style>
 </head>
 
 <!-- This section provides styling for those classes and illustrate class attributes -->
@@ -25,7 +31,8 @@
     <!-- tr are rows; td are table cells -->
     <!-- this row serves as the header for the various columns of data -->
      <colgroup>
-        <col span="1" style="background-color:purple">
+        <col span = "2">
+        <col span="1" style="background-color:red;">
     </colgroup>
     <tr>
         <th>Name</th>
