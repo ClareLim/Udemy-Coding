@@ -5,8 +5,21 @@ td {
     border-collapse: collapse;
     padding: 5px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h6, h4{
+    background-color:purple;
+}
+
+
+
     
-    /* With the dot, it applies styling to any element with a class of "h6" */
+    /* With the dot, it applies styling to any element with a class of "h6"
     .h6 {
         display: block;
         font-size: 0.67em;
@@ -19,7 +32,7 @@ td {
 
     /* div within div to be red */
 
-    .green {
+    /* .green {
         background-color: green;
     }
 
@@ -40,4 +53,4 @@ td {
     #bottom {
         background-color: grey;
         color: white;
-    }
+    }  */
