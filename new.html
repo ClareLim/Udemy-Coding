@@ -17,6 +17,15 @@
 		border: 1px solid black;
 		width: 100%;
 	}
+	dt{
+		font-weight: bold;
+		font-size:1.2em;
+	}
+	section{
+		padding: 10px;
+		border: 1px solid black;
+		margin: 10px;
+	}
 </style>
 
 <body>
@@ -38,11 +47,14 @@
 		<p>Welcome to my website, hope you enjoy it</p>
 		<hr>
 		<p>My name is Clare Lim</p>
+		<img src="https://media.licdn.com/dms/image/v2/D5603AQHWrrGIOkbr3w/profile-displayphoto-shrink_200_200/B56ZUktfdQHoAY-/0/1740077665432?e=1754524800&v=beta&t=G5UZpsBkW4fSifur163zL1vPjFpiehMDeu6rw1RYfjs" alt="">
 
 	</article>
 
-	<section class="Exp">
+	<!-- change from section class to section id allows the page to be scrolled -->
+	<section id="Exp">
 		<table>
+			<h2>Professional Work Experience</h2>
 			<colgroup>
 				<col span="1" style="background-color:	#ddd;">
 			</colgroup>
@@ -81,27 +93,74 @@
 		</table>
 	</section>
 
-	<section class="Edu">
+	<section id="Edu">
 		<!-- dl is description list -->
-		<dl>
+		 <table>
+		 <h2>Education</h2>
+		<!-- <dl>
 			<dt>University </dt>
 			<dd>Singapore Management University</dd>
 			<dt>Degree</dt>
 			<dd>Bachelor of Social Sciences</dd>
 			<dt>Graduation Date</dt>
-			<dd>2017</dd>
+			<dd>2017</dd> -->
+
+			<table>
+				<colgroup>
+					<col span="1" style="background-color:	#ddd;">
+				</colgroup>
+	
+				<tr>
+					<th>University</th>
+					<th>Program</th>
+				</tr>
+	
+				<tr>
+					<td>Singapore Management University</td>
+					<td>Bachelor of Social Science, Double Major in Psychology and Marketing; Attained SMU Global Innovation Immersion Award where I received SGD $8000 for work and study programme with CBS and venture-backed start-up in Europe</td>
+				</tr>
+
+				<tr>
+					<td>Tsinghua University</td>
+					<td>General Scholar, International Exchange Programme</td>
+				</tr>
+
+				<tr>
+					<td>Copenhagen Business School</td>
+					<td>Master's course in Entrepreneurial Business Planning and Development</td>
+				</tr>
+			</table>
+	</section>
+
+	<section id="Awards">
+		<h2>Awards & Achievements</h2>
+		<ul>
+			<li>Finalist for Women Leading Tech Awards in 2025</li>
+			<li>Selected for Women Who Code’s 100 Technologists – Applaud Her Award in 2023</li>
+			<li>Shortlist for Women In IT – Next Generation Leader Award in 2023</li>		
+		</ul>
 
 	</section>
 
-	<section class="Awards">
+	<section id="Skills">
+		<h2>Skills</h2>
+		<ol>
+			<li>CSS</li>
+			<li>HTML</li>
+			<li>JavaScript</li>
+			<ul>
+				<li>DOM</li>
+				<li>Node</li>
+				<li>Google Apps Script</li>
+			</ul>
+		</ol>
+
 
 	</section>
 
-	<section class="Skills">
-
-	</section>
-
-	<section class="Contact">
+	<section id="Contact">
+		<h2>Contact Me</h2>
+		<p>Contact me at my email <a href="mailto:limclare10@gmail.com">limclare10@gmail.com</a></p>
 
 	</section>
 
