@@ -1,3 +1,9 @@
+attribute > class > selection of tag (Source see 12:45 of class 2/18 on CSS Styling)
+
+inline attributes is harder to edit/maintain
+
+----
+
 ```
 .table{
   background-color: red
