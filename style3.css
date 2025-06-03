@@ -1,0 +1,30 @@
+/* selecting all divs to have borders */
+div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+/* shorthand */
+h2 {
+    border:solid 1px blue;
+    background-color: aqua;
+    width: 100px;
+    height:20px;
+    overflow:hidden;
+}
+
+to elements with class of red to have background color red
+
+.red {
+    background-color:red;
+    border: 1px dotted black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#bottom {
+    border:1px dotted black;
+    padding 10px 20px;
+    background-color: yellow;
+}
