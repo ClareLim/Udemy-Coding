@@ -17,6 +17,13 @@ h1{
     color:blue;
 
 }
+
+.h6{
+    font: 1.5em Arial;
+    color: aquamarine;
+    font:italic bold 1.5em Arial;
+    background-color: black;
+}
 #bottom{
     font-size: 1.5em;
 }
