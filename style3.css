@@ -14,7 +14,7 @@ h2 {
     overflow:hidden;
 }
 
-to elements with class of red to have background color red
+/* to elements with class of red to have background color red */
 
 .red {
     background-color:red;
