@@ -1,0 +1,91 @@
+/* This lesson is where we are looking at flexbox, it is another way where we can create structure for webpage elements when applying */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.header {
+    background-color: skyblue;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: steelblue;
+}
+
+li:hover a {
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main article {
+    flex: 3;
+    padding: 10px;
+}
+
+/* side menu */
+.main aside {
+    flex: 1;
+    text-align: center;
+}
+
+.col {
+    border: 1px solid black;
+}
+
+.footer {
+    background-color: slategray;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* mobile first */
+@media (min-width:640px) {
+    body {
+        background-color: #ddd;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 10px;
+    }
+}

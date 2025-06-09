@@ -29,3 +29,8 @@ a[href="#2"]{
     color: red;
     background-color: moccasin;
 }
+
+main h1, h2, h4, h6{
+    padding: 10px;
+    border: 5px dotted pink;
+}

@@ -2,191 +2,46 @@
 <html>
 
 <head>
-    <!-- all the information for that meta information is contained within the element as an attribute -->
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"> -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="style11.css">
+    <link rel="stylesheet" href="site2.css">
     <title>My Page</title>
-    
 </head>
 
 <body>
-<header>
-    <h1> Welcome to my Website. This is a header.</h1>
-</header>
-<h1>TEst H1</h1>
-
-<section>
-    <article class = "left">
-        <h2>Welcome to my Website. This is an article.</h2>
-        <div style="font-size:2em">welcome divyas</div>
-        <hr>
-        <p title="My Name">My name is<span class = "blue">Clare</span> <span>Lim</span> Min SG TH TW</p>
-        <span class="bigger"> Cascading Stylesheets</span> or CSS is used to style it and lay it out.
-        <span>Welcome to my Website. This is an article. HTML is awesome </span>
-
-        hi <span>stranger</span> there  
-
-    </article>
-</section>
-
-<nav>
-    <ul>
-        <li><a href="#1">Home</a></li>
-        <li><a href="#2">Services</a></li>
-        <li><a href="#3">About</a></li>
-        <li><a href="#4">Contact</a></li>
-    </ul>
-</nav>
-
-
-    <table>
-        <!-- tr are rows; td are table cells -->
-        <!-- this row serves as the header for the various columns of data -->
-        <colgroup>
-            <col span="2">
-            <col span="1" style="background-color:red;">
-        </colgroup>
-        <tr>
-            <th>Name</th>
-            <td>Chapter 1</td>
-            <td>Chapter 2</td>
-            <td>Chapter 3</td>
-            <td>Chapter 4</td>
-        </tr>
-
-        <tr>
-            <td>Laurence</td>
-            <td>x</td>
-            <td> </td>
-            <td>x</td>
-            <td> </td>
-        </tr>
-
-        <tr>
-            <td>John</td>
-            <td>x</td>
-            <td>x</td>
-            <td> </td>
-            <td> </td>
-        </tr>
-
-        <tr>
-            <td>Anne</td>
-            <td> </td>
-            <td>x</td>
-            <td> </td>
-            <td> </td>
-        </tr>
-
-    </table>
-
-
-    <main class="container">
-        <div>
-            <a href="#bottom">Go to bottom</a>
-            <!-- img src is where you can state relative path of img; alt is the name/description of image -->
-            <!-- you can also list the full path to an image online -->
-            <!-- img supports png, jpeg, GIFs, SVG, webp, you can also state attributes i.e. sizing -->
-
-            <img width="200px" src="download.png" alt="HTML5 Icon" width="100" height="100">
-
-            <!-- ordered list starts with ol and items inside are labelled with li -->
-            <ol type="i" start="20">
-                <li>Item 1</li>
-                <li>New List
-                    <ol>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ol>
-                </li>
-                <li>Item 3</li>
-            </ol>
-            <ul style="list-style-type: square;">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+    <header class="header"> 
+        <h1>Welcome to my Website. This is a header.</h1>
+    </header>
+    <div class = "main">
+        <aside class="col">
+            <ul>
+                <li><a href="#1">Home</a></li>
+                <li><a href="#2">Services</a></li>
+                <li><a href="#3">About</a></li>
+                <li><a href="#4">Contact</a></li>
             </ul>
-            <dl>
-                <dt>Main 1</dt>
-                <dd>-text</dd>
-                <dd>-text</dd>
-                <dt>Main 2</dt>
-                <dd>-text</dd>
-                <dd>-text</dd>
-            </dl>
-
-        </div>
-        <img
-            src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax/grumpy-cat-small.png">
-
-        <!-- id field is CASE/CAPS SENSITIVE -->
-
-        
-        <p id="myID">
-            Hello <br> World
-        </p>
-
-
-
-        <div>
-            <!-- <br> gives separation between words -->
-            <!-- <div style> is only applied to that element and structure is same as we can get with CSS -->
-            <!-- href is to provide full path/destination of link. It can be a URL or a image or html element. -->
-            <!-- note href is applied to the NEXT text e.g. "World" in this case. -->
-            <!-- target is how it is going to be displayed in browser window/taken away to another page. -->
-            <!-- self takes you to new page & eliminates the current page; blank takes you to new page & keeps the current page; parent opens doc up to paren; top opens up document in full body of window-->
-            <!-- blank and self are popularly used. -->
-            <!-- absolute path is the path from the root of the website or full website e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="/home/clarelim/Desktop/Udemy Coding/index.html" or href="index.html". -->
-            <!-- relative file is relate to where the file is located. e.g. if you are in /home/clarelim/Desktop/Udemy Coding/index.html and you want to go to /home/clarelim/Desktop/Udemy Coding/index.html you can use href="index.html". -->
-            <h1 class="blue"> Hello World</a></h1>
-            <div style="font-size:2em">Welcome to my site.</div>
-            <!-- <div style="color:blue;">Welcome to my site.</div>
-            <div style="color:red;">Welcome to my site.</div> -->
+        </aside>
+        <article class="left col">
+            <h2>Welcome to my Website. This is an article.</h2>
+            <div style="font-size:2em">welcome divyas</div>
             <hr>
-            <p title="My Name">My name is <span>Clare</span> <span>Lim</span></p>
+            <p title="My Name">My name is<span class = "blue">Clare</span> <span>Lim</span> Min SG TH TW</p>
+            <span class="bigger"> Cascading Stylesheets</span> or CSS is used to style it and lay it out.
+            <span>Welcome to my Website. This is an article. HTML is awesome </span>
 
-        </div>
-
-        <!-- <hr> gives horizontal line -->
-        <hr>
-
-        <h2 class="blue">Heading 2</h2>
-        <h4 class="red">Heading 4</h4>
-        <h6 class="green">Heading 6</h6>
-        <span class="h6">Heading 6 #2</span>
-        <!-- example of relative file/path -->
-        <p>Go to <a href="new.html">New Page</a></p>
-
-        <p>Send Email <a href="mailto:studyadm2024@gmail.com">studyadm2024@gmail.com</a></p>
-
-        <div id="bottom">
-            <!-- id field is CASE/CAPS SENSITIVE -->
-            Hi there,<a href="#myID">Go to top element with my ID</a>
-            hello world <span class="small">small</span> blah blah blah
-            hello world blah blah blah
-            ello world blah blah blah
-            ello world blah blah blah
-            hello world <span class="small">small</span>blah blah blah
-            hello world blah blah blah
-            hello world <span class="small">small</span>blah blah blah
-
-            <div class="green">TEST</div>
-        </div>
-
-        <footer>
-            hi there i am a footer !!! not a legger !!! hi there i am a footer !!! not a legger !!!hi there i am a footer !!! not a legger !!!
-        </footer>
-
-        <!-- Add another div here-->
-        <!-- 
-            <div>
-                Content
-            </div>
-          -->
-    </main>
+            hi <span>stranger</span> there
+        </article>
+        <aside class="col">
+            side menu
+        </aside>
+    </div>
+    
 </body>
+
+<footer>
+    <div>Thank you for visiting Clare Lim Website</div>
+    <a href="myID">Go to the top element with ID of myID</a>
+    <div class="green">TEST</div>
+</footer>
+
 
 </html>
