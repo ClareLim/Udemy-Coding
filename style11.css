@@ -1,0 +1,31 @@
+header h1 {
+    background-color: red;
+}
+
+article span {
+    background-color: pink;
+}
+
+/* Selects only the span elements that are direct children of an article element — not nested deeper. */
+
+
+
+article > span {
+    background-color: yellow;
+}
+
+/* apply to the span adjacent to the paragraph */
+
+
+article > p ~ span {
+    background-color: purple;
+}
+
+article > p + span {
+    background-color: green;
+}
+
+a[href="#2"]{
+    color: red;
+    background-color: moccasin;
+}
