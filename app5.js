@@ -37,4 +37,12 @@ console.log(val3);
 // check if 10 is equal 10
 let output = (10 == 10);
 output = (10 != 10);
+// check if 10 is equal 10 IN VALUE
+output = (10 == "10");
+
+// check if 10 is equal 10 IN VALUE AND DATATYPE
+output = (10 === "10");
+
+output = (50 >= 10);
+
 console.log(output);
